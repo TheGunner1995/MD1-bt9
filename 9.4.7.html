@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>Nhập số A</p>
+<input id="aa" type="text">
+<p>Nhập số B</p>
+<input id="bb" type="text">
+<button onclick="doiCho()">đổi chỗ</button>
+<p id="doi"></p>
+<script>
+  function doiCho(){
+    let A = []
+    let b = +document.getElementById('bb').value
+    A.push(b)
+    let a = +document.getElementById('aa').value
+    A.push(a)
+    document.getElementById('doi').innerHTML = A
+  }
+</script>
+</body>
+</html>

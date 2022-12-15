@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="so" type="text">
+<button onclick="total()">tính</button>
+<p id="kq"></p>
+<script>
+  function giaiThua(a){
+    let b = 1
+    for (let i = 1; i <= a; i++) {
+      b *= i
+    }
+    return b
+  }
+  function total(){
+    let a = +document.getElementById('so').value
+    let ketQua = giaiThua(a)
+    document.getElementById('kq').innerHTML = ketQua
+  }
+</script>
+</body>
+</html>

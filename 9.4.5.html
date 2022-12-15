@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="soA" type="text"><br>
+<input id="soB" type="text"><br>
+<input id="soC" type="text"><br>
+<button onclick="checkMin()">check min</button>
+<p id="ketqua"></p>
+<script>
+  function checkMin(){
+    let a = +document.getElementById('soA').value
+    let b = +document.getElementById('soB').value
+    let c = +document.getElementById('soC').value
+    if (a<b){
+      if (a<c){
+        document.getElementById('ketqua').innerHTML = a
+      }else {
+        document.getElementById('ketqua').innerHTML = c
+      }
+    }else if (b<c){
+      document.getElementById('ketqua').innerHTML = b
+    }else {
+      document.getElementById('ketqua').innerHTML = c
+    }
+  }
+</script>
+</body>
+</html>

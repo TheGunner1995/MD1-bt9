@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ktr so dương</title>
+</head>
+<body>
+<p>Nhập số vào đây</p> <br>
+<input id="num" type="text"><br>
+<button onclick="kiemtra()">kiểm tra</button>
+<p id="KQ"></p>
+<script>
+  function kiemtra(){
+    let num = +document.getElementById('num').value
+    if (num > 0){
+      document.getElementById('KQ').innerHTML = num + 'đây là số dương'
+      }else {
+      document.getElementById('KQ').innerHTML = num + 'đây là số âm'
+    }
+    if (num == 0){
+      document.getElementById('KQ').innerHTML = num + 'không là số dương cũng không là số âm'
+    }
+    }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>Nhập bán kính </p>
+<input id="r" type="text">
+<button onclick="total()"> tính</button>
+<p id="area"></p>
+<p id="perimeter"></p>
+<script>
+    function area(a) {
+        return a * a * Math.PI
+    }
+    function perimeter(a){
+        return 2*a*Math.PI
+    }
+    function total(){
+        let a = +document.getElementById('r').value
+        let s = area(a)
+        let c = perimeter(a)
+        document.getElementById('area').innerHTML = s
+        document.getElementById('perimeter').innerHTML = c
+    }
+
+</script>
+</body>
+</html>

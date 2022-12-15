@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="so" type="text"><br>
+<button onclick="ktSnt()"> Kiểm tra</button>
+<p id="kq"></p>
+<script>
+    function ktSnt() {
+        let num = +document.getElementById('so').value
+        for (let i = 2; i < num; i++) {
+            if (num % i == 0) {
+                document.getElementById('kq').innerHTML = num + 'không phải số nguyên tố '
+                break;
+            } else {
+                document.getElementById('kq').innerHTML = num + 'là số nguyên tố '
+            }
+        }
+        if (num == 2) {
+            document.getElementById('kq').innerHTML = num + 'là số nguyên tố '
+        } else if (num < 2) {
+            document.getElementById('kq').innerHTML = num + 'không phải số nguyên tố '
+        }
+    }
+</script>
+</body>
+</html>

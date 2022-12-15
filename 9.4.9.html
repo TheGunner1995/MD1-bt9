@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>Nhập vào mảng</p>
+<input id="nhapMang" type="text">
+<button onclick="nhapMang()">Nhập vào mảng</button>
+<p>Nhập dữ liệu</p>
+<input id="nhapDl" type="text">
+<button onclick="checkThu()">Tìm kiếm trong mảng</button>
+<p id="012"></p>
+<p id="123"></p>
+<p id="234"></p>
+<script>
+    let arr = []
+    function nhapMang() {
+        d = document.getElementById('nhapMang').value
+        arr.push(d)
+        document.getElementById('012').innerHTML = arr
+    }
+    function checkThu(){
+        let e = document.getElementById('nhapDl').value
+        for (let i = 0; i < arr.length; i++) {
+            if (e === arr[i]){
+                document.getElementById('123').innerHTML = e
+                document.getElementById('234').innerHTML = i
+                break;
+            }else {
+                document.getElementById('123').innerHTML = -1
+            }
+
+        }
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let a = prompt('nhập tên ngôi sao')
+  let ngoiSao = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus']
+  let chomSao = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo']
+  function sao(a){
+    for (let i = 0; i <= ngoiSao.length; i++) {
+      if (a === ngoiSao[i]){
+        ngoiSao[i]=chomSao[i]
+        return chomSao[i]
+      }else {
+        return ('khong ton tai')
+      }
+    }
+  }
+  let ketQua = sao(a)
+  alert(ketQua)
+</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="do" type="text">
+<button id="fm" onclick="fm()">Đổi f->m</button>
+<button id="mf" onclick="mf()">Đổi m->f</button>
+<p id="kq"></p>
+<script>
+  function fm() {
+    let f = +document.getElementById('do').value
+    m = 0.305 * f
+    document.getElementById('kq').innerHTML = m
+  }
+  function mf() {
+    let m = +document.getElementById('do').value
+    f = 3.279 * m
+    document.getElementById('kq').innerHTML = f
+  }
+</script>
+</body>
+</html>

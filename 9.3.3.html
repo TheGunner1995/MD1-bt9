@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>Nhập số A</p> <br>
+<input id="soA" type="text"> <br>
+<p>Nhập số B</p> <br>
+<input id="soB" type="text"> <br>
+<button onclick="tinh()">tính</button>
+<p id="kq"></p>
+<script>
+  function sum(numA, numB){
+    console.log(numA,numB)
+    if (numA < numB){
+      return (numA + numB)
+    }else {
+      return ('khong tinh')
+    }
+  }
+  function tinh(){
+    let numA = +document.getElementById('soA').value
+    let numB = +document.getElementById('soB').value
+    let tong = sum(numA, numB)
+    document.getElementById('kq').innerHTML = tong
+  }
+
+</script>
+</body>
+</html>
